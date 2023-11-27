@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.carpeta3.bienvenida"
+             Title="bienvenida">
+    <VerticalStackLayout
+        BackgroundColor="White">
+        <Label 
+            Text="¡Felicitaciones te has registrado exitosamente!"
+            VerticalOptions="Center" 
+            FontSize="23"
+            HorizontalOptions="Center" />
+
+        <Image
+                Source="bienvenida.gif"
+         Aspect="Center"  />
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <Label 
+            Text="¿Estas listo para empezar?"
+            VerticalOptions="Center"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="20"
+            HorizontalOptions="Center" />
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <Button
+                x:Name="Continua" 
+                Text="Continua"
+                HorizontalOptions="Center" 
+                FontSize="20"
+                BorderColor="DarkBlue"
+                TextColor="DarkBlue"
+                Clicked="Continua_Clicked"
+                BackgroundColor="CornflowerBlue"/>
+    </VerticalStackLayout>
+</ContentPage>

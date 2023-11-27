@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            BackgroundColor="White"
+            VerticalOptions="Center">
+
+            <Label
+                Text="¡¡ Bienvenido A TEApaño !!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" 
+                TextColor="Black"/>
+
+
+            <Label
+                Text="¿Quieres comenzar?"
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="Center" />
+            
+            <Image
+                Source="presentacion.png"
+                BackgroundColor="Azure"
+                HeightRequest="200"/>
+
+            <Button
+                x:Name="CounterBtn" 
+                Text="INGRESAR"
+                FontAttributes="Bold"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" 
+                BorderColor="DarkBlue"
+                TextColor="Black"
+                BackgroundColor="CornflowerBlue"/>
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

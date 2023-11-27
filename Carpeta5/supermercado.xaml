@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.Carpeta5.supermercado"
+             Title="supermercado">
+    <VerticalStackLayout
+        BackgroundColor="LightSteelBlue">
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Image
+                Source="super2.png"
+                HeightRequest="300"/>
+
+        <Label 
+        Text="             Empecemos con el saludo.&#10;En una compra lo mejor que puedes hacer es:"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <RadioButton Content="SALUDAR CON UN  'HOLA'"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <RadioButton Content="NO HACER NADA"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <RadioButton Content="ESPERAR A QUE SALUDE EL TRABAJADOR"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <RadioButton Content="NO ACERCARSE NI CONTESTAR SI SALUDAN"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+    </VerticalStackLayout>
+</ContentPage>

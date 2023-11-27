@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.carpeta.registro"
+             Title="registro">
+    <VerticalStackLayout
+        BackgroundColor="White">
+
+        <Label
+                Text="Inicie Sesión "
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <Label
+                Text="Rut: "
+                FontSize="20"
+                HorizontalOptions="Center"
+                TextColor="DarkBlue"/>
+        <Entry
+                x:Name="entryRut" HeightRequest="15"
+	            WidthRequest="130"
+	            FontSize="20"
+                HorizontalOptions="Center"
+	            TextColor="Black"
+	            BackgroundColor="LightYellow"
+	            Placeholder="12345678-9"/>
+
+        <Label
+                Text="Contraseña: "
+                FontSize="20"
+                HorizontalOptions="Center"
+                TextColor="DarkBlue"/>
+        <Entry
+                x:Name="entryContra" HeightRequest="15"
+	            WidthRequest="200"
+	            FontSize="20"
+                HorizontalOptions="Center"
+	            TextColor="Black"
+	            BackgroundColor="LightYellow"
+	            Placeholder="***************"
+                IsPassword="True"
+                />
+        <Button
+                x:Name="OlvidoCont" 
+                Text="¿Olvidaste tu contraseña?"
+                HorizontalOptions="Center" 
+                FontSize="15"
+                FontFamily="1"
+                BorderColor="DarkBlue"
+                TextColor="DarkBlue"
+                BackgroundColor="LightBlue"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="60"/>
+
+        <Label
+                Text="¿No tienes cuenta?"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        <Label
+                Text="Registrate"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <Label
+                Text="Rut: "
+                FontSize="20"
+                HorizontalOptions="Center"
+                TextColor="DarkBlue"/>
+        <Entry
+                x:Name="RegisRut" HeightRequest="15"
+	            WidthRequest="130"
+	            FontSize="20"
+                HorizontalOptions="Center"
+	            TextColor="Black"
+	            BackgroundColor="LightYellow"
+	            Placeholder="12345678-9"/>
+        <Label
+                Text=""
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                TextColor="White"/>
+        <Button
+                x:Name="Siguiente2" 
+                Text="Siguiente"
+                HorizontalOptions="Center" 
+                FontSize="20"
+                FontFamily="1"
+                BorderColor="DarkBlue"
+                TextColor="DarkBlue"
+                Clicked="Siguiente2_Clicked"
+                BackgroundColor="CornflowerBlue"/>
+
+    </VerticalStackLayout>
+</ContentPage>

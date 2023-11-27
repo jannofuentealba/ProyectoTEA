@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.carpeta2.registrar"
+             Title="registrar">
+    <VerticalStackLayout
+        BackgroundColor="White">
+        <Label
+                Text="Ingresa tus datos "
+                FontSize="23"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        
+        <Entry
+           HeightRequest="15"
+           WidthRequest="200"
+           FontSize="20"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           BackgroundColor="LightYellow"
+           Placeholder="Nombre"/>
+
+        <Entry
+           HeightRequest="15"
+           WidthRequest="200"
+           FontSize="20"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           BackgroundColor="LightYellow"
+           Placeholder="Apellido Materno"/>
+        <Entry
+           HeightRequest="15"
+           WidthRequest="200"
+           FontSize="20"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           BackgroundColor="LightYellow"
+           Placeholder="Apellido Paterno"/>
+        <Entry
+           HeightRequest="15"
+           WidthRequest="200"
+           FontSize="20"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           BackgroundColor="LightYellow"
+           Placeholder="Dirección"/>
+        <Entry
+           HeightRequest="15"
+           WidthRequest="200"
+           FontSize="20"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           BackgroundColor="LightYellow"
+           Placeholder="Celular"/>
+
+        <Label
+         HorizontalOptions="Center"
+         TextColor="Black"
+         Text="Sexo"
+         FontSize="20"/>
+  
+        <RadioButton Content="Masculino"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+       
+        <RadioButton Content="Femenino"
+         IsChecked="False" 
+         TextColor="Black"
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <Button
+                x:Name="Siguiente3" 
+                Text="Finalizar"
+                HorizontalOptions="Center" 
+                FontSize="20"
+                BorderColor="DarkBlue"
+                TextColor="DarkBlue"
+                Clicked="Siguiente3_Clicked"
+                BackgroundColor="CornflowerBlue"/>
+    </VerticalStackLayout>
+</ContentPage>

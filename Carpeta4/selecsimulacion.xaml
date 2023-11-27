@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProyect.Carpeta4.selecsimulacion"
+             Title="selecsimulacion">
+    <VerticalStackLayout
+        BackgroundColor="LightSteelBlue">       
+        <Label 
+            Text="!!Bienvenido a TEApaño!!&#10;La aplicación que le ayudará a tener mas confianza&#10;en la manera en que te comunicas.
+Podrás desenvolverte casi en cualquier&#10;contexto de interacción con tus amigos o compañeros de trabajo.&#10;Simularemos situaciones que tu vives día a día.&#10;Comencemos."
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+
+        <Label 
+            Text="Selecciona una opción"
+            VerticalOptions="Center" 
+            FontSize="20"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            TextColor="Black"/>
+        <Image
+                Source="blanco1.png"
+                HeightRequest="40"/>
+        <RadioButton Content="Compra en un Supermercado/Negocio"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"            
+                     />
+
+        <RadioButton Content="Conversación casual con amigo"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"
+                     />
+
+        <RadioButton Content="Entrevista de trabajo"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <RadioButton Content="Exposición oral en público"
+         TextColor="Black"
+         IsChecked="true" 
+         HorizontalOptions="Center"
+         FontSize="20"/>
+
+        <Button
+                x:Name="SSimular" 
+                Text="Simular"
+                HorizontalOptions="Center" 
+                FontSize="25"
+                BorderColor="DarkBlue"
+                Clicked="SSimular_Clicked"
+                TextColor="DarkBlue"
+
+                BackgroundColor="CornflowerBlue"/>
+
+        <Image
+                Source="expo.png"
+                HeightRequest="200"/>
+    </VerticalStackLayout>
+</ContentPage>
+    
